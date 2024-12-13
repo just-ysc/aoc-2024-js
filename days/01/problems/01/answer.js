@@ -33,7 +33,7 @@ const printAnswer = answer => console.log(`The answer is : ${answer}`);
 
 
 (async () => {
-  const input = await getInput(path.join(__dirname, '/input.txt'));
+  const input = await getInput(path.join(__dirname, '/../../input.txt'));
   const locationPairs = getLocationPairs(input);
   printAnswer(getTotalDistances(locationPairs));
 })();
